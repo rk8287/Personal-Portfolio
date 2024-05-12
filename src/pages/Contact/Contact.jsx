@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify'; // Import the 'toast' function from react-toastify
@@ -21,6 +21,9 @@ const variants = {
 };
 
 const Contact = () => {
+
+  const [loading,setLoading] = useState(false)
+  
   const ref = useRef();
   const formRef = useRef();
 
@@ -29,7 +32,8 @@ const Contact = () => {
  
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true); // Set loading to true when the form is submitted
+  
     emailjs
       .sendForm(
         "service_7hp8d5n",
@@ -45,9 +49,12 @@ const Contact = () => {
         (error) => {
           toast.error("Error In sending Email");
         }
-      );
+      )
+      .finally(() => {
+        setLoading(false); // Set loading to false regardless of success or error
+      });
   };
-
+  
   return (
     <motion.div
       ref={ref}
@@ -111,7 +118,8 @@ const Contact = () => {
           <input className="border-input" type="text" required placeholder="Name" name="name"/>
           <input className="border-input" type="email" required placeholder="Email" name="email"/>
           <textarea className="border-input" rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
+          <button style={{color:'white',fontWeight:'600',fontFamily:"inherit"}} disabled={loading}>{loading ? 'Loading' : 'Submit'}</button>
+
         </motion.form>
       </div>
     </motion.div>

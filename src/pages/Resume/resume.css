@@ -1,0 +1,226 @@
+.resume-main-container{
+    background-color: #fcf9f2;
+    height: 100%;
+    width: 100%;
+}
+
+.resume-main-section{
+    max-width: 100%;
+    padding: 6rem 9rem;
+    text-align: start;
+}
+.resume-header{
+    color: #3e3e3e;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.resume-second-head{
+    font-size: 45px;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    color: #1d1c22;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.resume-wrapper{
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+
+.resume-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+    
+}
+
+.left-head{
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #1d1c22;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+
+.right-head{
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #1d1c22;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.resume-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+   
+}
+
+.main-resume-details-container{
+   
+    margin-bottom: 3rem;
+}
+
+.full{
+    font-size: 22px;
+    line-height: 25.2px;
+    letter-spacing: 0.5px;
+    color: #3e3e3e;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.duration-container{
+
+    width: 45%;
+    padding: 0.6rem 0;
+    background-color: #e6fc56;
+    text-align: center;
+    font-size: 12px;
+    color: #3e3e3e;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.resume-description{
+    font-size: 16px;
+    line-height: 24.5px;
+    letter-spacing: 0.5px;
+    color: #3e3e3e;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.resume-skill-section{
+
+}
+
+.skill-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-skill{
+    flex: 1;
+    
+}
+
+.skill-header{
+    color: #1d1c22;
+    font-size: 25px;
+    line-height: 25.2px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 6rem;
+}
+
+.skill-second-header{
+    font-size: 22px;
+    line-height: 25px;
+    line-height: 0.5px;
+    color: #3e3e3e;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skill-content{
+
+}
+
+.skill-content > ul{
+    list-style: none;
+  
+}
+
+.skill-content > ul > li{
+    margin-top: 0.7rem;
+    color: #3e3e3e;
+    line-height: 25.2px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.right-skill{
+    flex: 1;
+    margin-left: 6rem;
+}
+/* For screens up to 768px width */
+@media screen and (max-width: 768px) {
+    .resume-main-section {
+        padding: 3rem; /* Adjust padding for smaller screens */
+    }
+
+    .resume-wrapper {
+        flex-direction: column; /* Stack items vertically on small screens */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .resume-right {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    .resume-second-head{
+        font-size: 36px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        color: #1d1c22;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+        padding: 1rem 0;
+        font-weight: 500;
+        text-align: left;
+    }
+    .left-head,
+    .right-head {
+        margin-bottom: 30px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1.5rem 0; /* Adjust margin for smaller screens */
+    }
+
+    .duration-container {
+        width: 100%; /* Ensure full width for duration container on small screens */
+    }
+
+    .skill-wrapper {
+        flex-direction: column; /* Stack skills vertically on small screens */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .right-skill {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    
+.resume-description{
+    font-size: 13px;
+    line-height: 24.5px;
+    letter-spacing: 0.5px;
+    color: #3e3e3e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+}
+

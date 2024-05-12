@@ -1,0 +1,360 @@
+
+.experience-main-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #d1d6ce;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
+    
+}
+
+.experience-main-container {
+    margin: 4rem 0;
+    max-width: 85%;
+    display: flex;
+    flex: 1;
+   
+}
+
+.experience-left {
+    flex: 0.5;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.experience-right{
+    flex: 0.5;
+    padding: 1rem 0;
+    position: relative;
+
+}
+.experience-left {
+    height: 65vh;
+    width: 80%;
+    background-image: url('../../assets/bg_3-1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.experience-image > img {
+    height: 70vh;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    margin: 3rem 6rem;
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+
+.experience-image > img:hover {
+    transform: translateY(-20px); /* Move the image 20 pixels upwards on hover */
+}
+
+
+.experience-right{
+
+    padding: 1rem 0;
+    margin-left: 7rem;
+}
+
+.experience-right-head{
+    font-size: 1.2rem;
+    line-height: 25.2px;
+    letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3e3e3e;
+    text-align: start;
+}
+
+.some-detials{
+    font-size: 45px;
+    line-height: 63px;
+    letter-spacing: 1px;
+    color: #1d1c22;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.some{
+    color: #3e3e3e;
+    font-size: 1.3rem;
+    line-height: 28.9px;
+    text-align: start;
+    letter-spacing: 1.4px;
+    margin-top: 20px;
+    font-family:cursive;
+
+}
+
+.description{
+    font-size: 15px;
+    line-height: 25.2px;
+    text-align: start;
+    letter-spacing: 0.5px;
+    color: #3e3e3e;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.exp-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+   text-align: start;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ex > p{
+    color: #1d1c22;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25.2px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.ex > strong{
+    color: #1d1c22;
+    font-size: 25px;
+    line-height: 25.2px;
+    letter-spacing: 0.5px;
+  
+}
+
+.ex{
+    margin-top: 2rem;
+}
+
+.sk{
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+
+
+.sk > p{
+    color: #1d1c22;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25.2px;
+    margin-bottom: 1rem;
+}
+
+
+.sk > strong{
+    color: #1d1c22;
+    font-size: 25px;
+    line-height: 25.2px;
+    letter-spacing: 0.5px;
+   
+}
+
+.total-exper{
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    background-color: #d1d6ce;
+    padding: 4rem 0;
+
+}
+
+.total-exper > .first-div {
+    border: 1px solid lightcyan;
+    padding: 2rem 8.5rem;
+    margin-left: 7rem;
+}
+
+
+
+
+.total-exper > .second-div {
+    border: 1px solid lightcyan;
+    padding: 2rem 8.5rem;
+    background-color: #1d1c22;
+    
+    
+}
+
+
+
+.total-exper > .third-div {
+    border: 1px solid lightcyan;
+    padding: 2rem 8.5rem;
+   
+}
+
+
+.total-exper > .first-div >h3{
+    text-align: center;
+    color: #1d1c22;
+    font-size: 65px;
+    line-height: 84.5px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.total-exper > .first-div >h5{
+    color: #3e3e3e;
+    font-size: 18px;
+    line-height: 28.9px;
+    letter-spacing: 0.5px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.total-exper > .second-div >h3{
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    line-height: 84.5px;
+    letter-spacing: 0.5px;
+}
+
+
+.total-exper > .second-div >h5{
+    color: #e6fc56;
+    font-size: 18px;
+    line-height: 28.9px;
+    letter-spacing: 0.5px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.total-exper > .third-div >h3{
+    text-align: center;
+    color: #1d1c22;
+    font-size: 65px;
+    line-height: 84.5px;
+    letter-spacing: 0.5px;
+}
+
+
+.total-exper > .third-div >h5{
+    color: #3e3e3e;
+    font-size: 18px;
+    line-height: 28.9px;
+    letter-spacing: 0.5px;
+    font-family:'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 600px) {
+    .experience-main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience-main-container {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        padding-bottom: 0rem;
+    }
+    
+    .experience-left, .experience-right {
+        flex: 1;
+    }
+    
+    .experience-left {
+        padding: 0;
+        height: auto;
+        width: 100%;
+        background-position: center; /* Center the background image */
+    }
+
+    .experience-image > img {
+        height: auto;
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .experience-right {
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .exp-container, .sk {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .total-exper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .total-exper > .first-div, .total-exper > .second-div, .total-exper > .third-div {
+        padding: 2rem;
+        margin: 1rem 0;
+        width: 100%; /* Set width to 100% to fill the container */
+    }
+
+    .total-exper > .first-div > h3,
+    .total-exper > .second-div > h3,
+    .total-exper > .third-div > h3 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .experience-right-head > h4{
+        font-size: 1rem;
+    }
+
+
+    .exp-container{
+       text-align: center;
+      
+      
+    }
+
+    .some-detials > h3{
+        font-size: 3rem;
+        overflow: hidden;
+    }
+
+    .exp-container > .ex > strong{
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    .exp-container > .sk > strong{
+        font-size: 1.2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    .total-exper{
+        width: 100%;
+        padding: 0 2rem;
+        text-align: center;
+        
+        
+    }
+
+   
+    .total-exper > .first-div > h5,
+    .total-exper > .second-div > h5,
+    .total-exper > .third-div > h5 {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,138 @@
+.contact-main-container {
+  height: 100vh;
+  width: 100%;
+  padding: 0 6rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  gap: 50px;
+  background-color: #fcf9f2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    padding: 10px;
+    flex-direction: column;
+    /* Adjusting top margin for smaller screens */
+    gap: 10px;
+  }
+
+  .textContainer-main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 8rem;
+
+      /* Media query for screens smaller than 600px */
+      @media (max-width: 600px) {
+        font-size: 36px;
+        line-height: 40px; /* Adjusting line-height for smaller screens */
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .formContainer-main-section {
+    flex: 1;
+    position: relative;
+
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      padding: 20px; /* Adjusting padding for smaller screens */
+      width: 100%;
+    }
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+
+      svg {
+        width:450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      
+    .phoneSvg {
+      
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    
+
+      svg {
+        width:250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+      }
+    }
+
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid goldenrod;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 5px;
+        font-weight: 600;
+       letter-spacing: 1px; 
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+          padding: 10px; /* Adjusting padding for smaller screens */
+        }
+      }
+
+
+    
+      button {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+          padding: 10px; /* Adjusting padding for smaller screens */
+        }
+      }
+    }
+  }
+}

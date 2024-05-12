@@ -1,0 +1,143 @@
+.home-main-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%; 
+    background-color: #fcf9f2;
+}
+
+.home-main-section {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    max-width: 85%;
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    flex: 1;
+    padding: 1rem 0;
+    position: relative;
+    background-image: url('../../assets/bg_32.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.right{
+    flex: 0.6;
+    padding: 1rem 0;
+    position: relative;
+    background-image: url('../../assets/patterns41.png'); 
+    background-size: cover;
+}
+
+.left-content {
+    position: relative;
+    z-index: 1;
+}
+
+.left > .name-tag > .names {
+    font-size: 16px;
+    line-height: 25.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.bold-text {
+    font-size: 70px;
+    line-height: 91px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    text-align: start;
+    color: #1d1c22;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.desc {
+    margin-top: 20px;
+    line-height: 25.2px;
+    font-size: 12px;
+    color: #3e3e3e;
+    width: 80%;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buttons > button {
+    margin-top: 20px;
+    padding: 0.8rem 1.8rem;
+    margin-left: 1rem;
+    border-radius: 0;
+    border: 0.5px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #1d1c22;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .home-main-container {
+        flex-direction: column;
+    }
+    
+    .home-main-section {
+        max-width: 100%;
+    }
+    
+    .left, .right {
+        flex: 1;
+        padding: 0;
+    }
+
+    .left-content {
+        margin-left: 2rem;
+        
+    }
+    
+    .left > .name-tag > .names {
+        font-size: 1rem;
+        line-height: 0;
+        letter-spacing: 0.8px;
+        margin-left: 2rem;
+    }
+    
+    .bold-text {
+        font-size: 2.8rem;
+        margin-left: 2rem;
+        line-height: 80px;
+        letter-spacing: 3px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+
+    
+    .desc {
+        font-size: 0.7rem;
+        line-height: 22.2px;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        margin-left: 2rem;
+    }
+    
+    .buttons > button {
+        margin-left: 2rem;
+    }
+    
+    .right {
+        display: none;
+    }
+}

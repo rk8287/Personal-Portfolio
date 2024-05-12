@@ -1,0 +1,183 @@
+.main-portfolio-container{
+    width: 100%;
+    background-color: #d1d6ce;
+    height: 100%;
+    
+}
+
+.main-porfolio-section{
+    
+    max-width: 100%;
+    padding: 6rem 9rem;
+    
+}
+
+.portfolio-header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.8px;
+
+}
+
+.portfolio-second-header{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+
+.porfolio-wrapper{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.porfolio-wrapper-second{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.portfolio-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 4rem 3rem;
+ 
+    
+}
+
+.portfolio-right{
+    flex: 1;
+    display: flex;
+    
+   
+}
+
+.portfolio-right > img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+
+.portfolio-right > img:hover {
+    transform: translateY(-20px); /* Move the image 20 pixels upwards on hover */
+}
+
+
+.wordpress{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+   color: #3e3e3e;
+    width: 20%;
+    padding: 0.4rem;
+    background-color: #e6fc56;
+    text-align: center;
+    line-height: 25.2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second-wordpress{
+    font-size: 45px;
+    line-height: 63px;
+    letter-spacing: 0.7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.third-wordpress{
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3e3e3e;
+    margin-top: 20px;
+}
+
+.fourth-btn > button{
+    background-color: #212025;
+    font-weight: 600;
+    color: white;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    &:hover{
+        color: #e6fc56;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .porfolio-wrapper {
+        display: flex;
+        flex-direction: column-reverse; 
+        
+    }
+
+    .porfolio-wrapper-second {
+        display: flex;
+        flex-direction: column; 
+        
+    }
+
+    .portfolio-left,
+    .portfolio-right {
+        flex: auto; /* Allow both sides to take full width on small screens */
+        padding: 2rem 1rem; /* Adjust padding for mobile */
+    }
+
+    .wordpress {
+        font-size: 9px; /* Adjust font size for smaller screens */
+    }
+
+    .second-wordpress {
+        font-size: 25px; /* Adjust font size for smaller screens */
+        line-height: 35px; /* Adjust line height for smaller screens */
+    }
+
+    .third-wordpress {
+        font-size: 11px; /* Adjust font size for smaller screens */
+        line-height: 18px; /* Adjust line height for smaller screens */
+    }
+
+    .main-porfolio-section {
+        max-width: 100%;
+        padding: 6rem 1rem; /* Adjust padding for mobile */
+    }
+    
+    .portfolio-left {
+        padding: 2rem 1rem; /* Adjust padding for mobile */
+    }
+    
+    .portfolio-right > img {
+        width: 100%;
+        height: auto; /* Ensure image aspect ratio is maintained */
+    }
+    
+    .wordpress {
+        font-size: 10px; /* Adjust font size for mobile */
+        width: 100%; /* Ensure full width on mobile */
+        padding: 0.4rem 0.5rem; /* Adjust padding for mobile */
+        line-height: 20px; /* Adjust line height for mobile */
+    }
+    
+    .second-wordpress {
+        font-size: 30px; /* Adjust font size for mobile */
+        line-height: 40px; /* Adjust line height for mobile */
+    }
+    
+    .third-wordpress {
+        font-size: 12px; /* Adjust font size for mobile */
+        line-height: 20px; /* Adjust line height for mobile */
+    }
+    
+    .fourth-btn > button {
+        padding: 0.5rem 1rem; /* Adjust padding for mobile */
+    }
+    
+}

@@ -1,0 +1,99 @@
+.main-hire-container {
+    height: 70vh;
+    background-color: #e6fc56;
+}
+
+.main-hire-section {
+    max-width: 100%;
+    padding: 0rem 9rem;
+    text-align: center;
+}
+
+.hire-header {
+    margin-top: 1.25rem; /* Converted from 20px */
+    font-size: 1rem; /* Converted from 16px */
+    line-height: 1.5625rem; /* Converted from 25px */
+    color: #3e3e3e;
+    letter-spacing: 0.1875rem; /* Converted from 3px */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg > img,
+.bg-2 > img {
+    width: 2.5rem; /* Converted from 20% */
+    height: 2.5rem; /* Converted from 20% */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -0.625rem; /* Converted from -5rem */
+    margin-left: -1.25rem; /* Converted from -10rem */
+}
+
+.bg-2 > img {
+    margin-left: 4.375rem; /* Converted from 70rem */
+}
+
+.hire-co-header {
+    margin-top: 1.25rem; /* Converted from 20px */
+    font-size: 2.8125rem; /* Converted from 45px */
+    line-height: 3.9375rem; /* Converted from 63px */
+    letter-spacing: 0.03125rem; /* Converted from 0.5px */
+    color: #1d1c22;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hire-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem; /* Converted from 20px */
+}
+
+.hire-btns > .button {
+    margin-left: 0.625rem; /* Converted from 1rem */
+    padding: 0.675rem 2rem; /* Converted from 0.7rem 1.5rem */
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #1d1c22;
+        color: white;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .bg > img,
+    .bg-2 > img {
+        width: 2.5rem; /* Adjusted for mobile */
+        height: 2.5rem; /* Adjusted for mobile */
+        margin-top: -0.9375rem; /* Adjusted for mobile */
+    }
+
+    .hire-co-header {
+        font-size: 1.5rem; /* Adjusted for mobile */
+        line-height: 2rem; /* Adjusted for mobile */
+    }
+
+    .hire-btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hire-btns > .button {
+        width: 100%;
+        margin: 1rem;
+        padding: 0.625rem 1rem; 
+    }
+
+   
+
+    
+
+}

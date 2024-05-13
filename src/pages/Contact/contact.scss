@@ -15,7 +15,6 @@
   @media (max-width: 600px) {
     padding: 10px;
     flex-direction: column;
-    /* Adjusting top margin for smaller screens */
     gap: 10px;
   }
 
@@ -36,11 +35,13 @@
       font-size: 100px;
       line-height: 88px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      line-height: 8rem;
+      line-height: 6rem;
 
       /* Media query for screens smaller than 600px */
       @media (max-width: 600px) {
-        font-size: 36px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 40px; /* Adjusting line-height for smaller screens */
       }
     }
@@ -50,14 +51,36 @@
     }
   }
 
+  .textContainer-main-container > .item > h2{
+    @media (max-width: 600px) {
+      font-size: 12px;
+      font-weight: 600;
+      color: gray;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+
+
+  
+  .textContainer-main-container > .item > span{
+    @media (max-width: 600px) {
+      font-size: 13px;
+
+      font-weight: 600;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+
   .formContainer-main-section {
     flex: 1;
     position: relative;
+    
 
     /* Media query for screens smaller than 600px */
     @media (max-width: 600px) {
       padding: 20px; /* Adjusting padding for smaller screens */
       width: 100%;
+      margin-bottom: 5rem;
     }
 
     .phoneSvg {
@@ -130,7 +153,8 @@
 
         /* Media query for screens smaller than 600px */
         @media (max-width: 600px) {
-          padding: 10px; /* Adjusting padding for smaller screens */
+          padding: 8px; /* Adjusting padding for smaller screens */
+          
         }
       }
     }

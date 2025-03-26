@@ -5,8 +5,9 @@ import { fadeInS } from '../../components/variants/variants';
 import { useInView } from 'react-intersection-observer';
 
 
-const project = require('../../assets/RER-mockup1-1024x768.png')
-const projectTwo = require('../../assets/Screenshot 2024-05-19 114903.png')
+const project = require('../../assets/projectOne.png')
+const coursePurchsing = require('../../assets/projectTwo.png')
+const ecommerce = require('../../assets/projectThree (1).png')
 
 
 const Porfolio = () => {
@@ -70,7 +71,7 @@ const Porfolio = () => {
                         </div>
                     </div>
                     <div className="portfolio-right">
-                        <img className='project-image' src={project} alt="" />
+                        <img className='project-image' src={coursePurchsing} alt="" />
                     </div>
                 </div>
 
@@ -82,7 +83,7 @@ const Porfolio = () => {
 
 
                     <div className="portfolio-right">
-                        <img className='project-image' src={project} alt="" />
+                        <img className='project-image' src={ecommerce} alt="" />
                     </div>
 
 
@@ -170,7 +171,7 @@ const Porfolio = () => {
                         </div>
                     </div>
                     <div className="portfolio-right">
-                        <img className='project-image' src={projectTwo} alt="" />
+                        <img className='project-image' src={project} alt="" />
                     </div>
                 </div>
 

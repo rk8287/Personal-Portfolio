@@ -35,7 +35,7 @@ const Home = () => {
           <div className="buttons">
             <button
               style={{ backgroundColor: 'black', color: 'white' }}
-              onClick={() => window.open('https://www.linkedin.com/in/raunak-singh954', '_blank')}
+              onClick={() => window.open('/contact-us')}
             >
               Let's Talk! <IoIosArrowForward className='arrow' />
             </button>

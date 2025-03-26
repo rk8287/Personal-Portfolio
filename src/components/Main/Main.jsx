@@ -17,7 +17,7 @@ const Main = () => {
        <Home/>
        </div>
 
-       <div className="experience">
+       <div className="experience" id='about'>
           <Experience/>
        </div>
 
@@ -31,7 +31,7 @@ const Main = () => {
        </div>
 
        
-       <div className="resume">
+       <div className="resume" id='Achievements'>
           <Resume/>
        </div>
 

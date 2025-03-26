@@ -16,13 +16,13 @@ const Experience = () => {
 
   const incrementNumbers = () => {
     const timer = setInterval(() => {
-      // Increment yearsOfExp every 300 milliseconds
+     
       setYearsOfExp(prevState => (prevState < 2 ? prevState + 1 : prevState));
-      // Increment completedProjects and happyClients every 100 milliseconds
+     
       setCompletedProjects(prevState => (prevState < 10 ? prevState + 1 : prevState));
       setHappyClients(prevState => (prevState < 10 ? prevState + 1 : prevState));
-    }, 200); // Keep this interval for completedProjects and happyClients
-    return () => clearInterval(timer); // Stop the timer when the component unmounts
+    }, 200); 
+    return () => clearInterval(timer); 
   };
 
 
@@ -82,26 +82,44 @@ const Experience = () => {
             </div>
 
             <div className="exp-container">
-              <div className="ex">
-                <motion.p variants={fadeInS("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  ref={ref}
-                  viewport={{ once: false, amount: 0.7 }}>EXPERIENCE</motion.p>
-                <strong>2+ Years</strong>
-              </div>
-              <div className="sk">
-                <motion.p variants={fadeInS("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  ref={ref}
-                  viewport={{ once: false, amount: 0.7 }}>SKILLS</motion.p>
-                <motion.strong variants={fadeInS("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  ref={ref}
-                  viewport={{ once: false, amount: 0.7 }}>Full Stack Developer</motion.strong>
-              </div>
+            <div className="ex">
+  <motion.p 
+    variants={fadeInS("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    ref={ref}
+    viewport={{ once: false, amount: 0.7 }}
+  >
+    EXPERIENCE
+  </motion.p>
+  <strong>Extensive Hands-on Experience</strong>
+  <p>Worked on multiple real-world projects, including internships and freelance work, building scalable full-stack applications.</p>
+</div>
+
+<div className="sk">
+  <motion.p 
+    variants={fadeInS("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    ref={ref}
+    viewport={{ once: false, amount: 0.7 }}
+  >
+    SKILLS
+  </motion.p>
+  
+  <motion.strong 
+    variants={fadeInS("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    ref={ref}
+    viewport={{ once: false, amount: 0.7 }}
+  >
+    Full Stack Developer | MERN Stack | DSA with Java
+  </motion.strong>
+
+  <p>Proficient in React.js, Node.js, Express.js, and MongoDB for building scalable web applications. Experienced in UI/UX design, API integrations, and optimizing performance. Strong problem-solving skills with Data Structures & Algorithms using Java.</p>
+</div>
+
             </div>
 
           </div>
@@ -111,32 +129,6 @@ const Experience = () => {
       </div>
 
 
-      <div className="total-exper">
-        <motion.div variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          ref={ref}
-          viewport={{ once: false, amount: 0.7 }} className="first-div">
-          <h3>{yearsOfExp}+</h3>
-          <h5>Years of Experience</h5>
-        </motion.div>
-        <motion.div variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          ref={ref}
-          viewport={{ once: false, amount: 0.7 }} className="second-div">
-          <h3>{completedProjects}+</h3>
-          <h5>Completed Projects</h5>
-        </motion.div>
-        <motion.div variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          ref={ref}
-          viewport={{ once: false, amount: 0.7 }} className="third-div">
-          <h3>{happyClients}+</h3>
-          <h5>Happy Clients</h5>
-        </motion.div>
-      </div>
     </>
 
   );

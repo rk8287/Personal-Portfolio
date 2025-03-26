@@ -55,12 +55,13 @@
    
 }
 
-.portfolio-right > img{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease; 
+.portfolio-right > img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
+
 
 .portfolio-right > img:hover {
     transform: translateY(-20px); /* Move the image 20 pixels upwards on hover */
@@ -112,7 +113,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1310px) {
     .porfolio-wrapper {
         display: flex;
         flex-direction: column-reverse; 

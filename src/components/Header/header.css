@@ -1,148 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main-header-section {
-    width: 100%;
-    background-color: #fcf9f2;
-    letter-spacing: 1px;
-    
-  }
-  
-  .main-header-section > .header-container {
-    display: flex;
-    align-items: center;
-    max-width: 85%;
-    height: 70px;
-    margin: auto;
-    justify-content: space-between;
-   
-  }
+  width: 100%;
+  background-color: #fcf9f2;
+  letter-spacing: 1px;
+}
 
-  .logo > .h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
-    color: black;
-    font-size: 2rem;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85%;
+  height: 70px;
+  margin: auto;
+  position: relative;
+}
 
-  }
+/* Logo */
+.logo .h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
 
-  .edit{
-    color: #e6fc56;
-    font-family: cursive;
-  }
+.edit {
+  color: #e6fc56;
+  font-family: cursive;
+}
 
-  .h3{
-    text-decoration: none;
-    font-weight: 700;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+/* Navigation Links */
+.links {
+  display: flex;
+  gap: 1rem;
+}
 
-  .links > .links-l{
-    padding: 0 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: #cbcbcb;
-    letter-spacing: 1.5px;
-    cursor: pointer;
+.links .links-l {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #cbcbcb;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
 
-    &:hover{
-        color: #121212;
-    }
-  }
+.links .links-l:hover {
+  color: #121212;
+}
 
+/* Contact Button */
+.click-contact-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 14px;
+  background-color: #fcf9f2;
+  border: 0.7px solid black;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  .click-contact-btn{
-    padding: 0.7rem 1.5rem;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.5px;
-    background-color: #fcf9f2;
-    border: 0.7px solid black;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.click-contact-btn:hover {
+  background-color: #121212;
+  color: white;
+}
 
-    &:hover{
-        background-color: #121212;
-        color: white;
-    }
-  }
+.arrow {
+  margin-left: 0.4rem;
+}
 
-  .arrow{
-   align-items: center;
-   margin: 0 0.4rem;
-  }
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Moves it to the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-
-  @media screen and (max-width: 600px) {
-
-  
-  .main-header-section {
-      width: 100%;
-      background-color: #fcf9f2;
-      
-    }
-    
-    .main-header-section > .header-container {
-      display: flex;
-      align-items: center;
-      max-width: 85%;
-      height: 70px;
-      margin: auto;
-      justify-content: space-between;
-     
-    }
-  
-    .logo{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-    }
-  
-    .links > .links-l{
-      padding: 0 1rem;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 0.9rem;
-      text-decoration: none;
-      color: #cbcbcb;
-      letter-spacing: 1.5px;
-      cursor: pointer;
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .links {
       display: none;
-  
-      &:hover{
-          color: #121212;
-      }
-    }
-  
-    .contact{
-     
-    }
-  
-    .click-contact-btn{
-      padding: 0.7rem 1.5rem;
-      font-size: 14px;
-      line-height: 14px;
-      letter-spacing: 0.5px;
-      background-color: #fcf9f2;
-      border: 0.7px solid black;
-      font-weight: 500;
-      cursor: pointer;
-  
-      &:hover{
-          background-color: #121212;
-          color: white;
-      }
-    }
-  
-    .arrow{
-     align-items: center;
-     margin: 0 0.4rem;
-    }
-  
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #fcf9f2;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
   }
+
+  .links.open {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .contact {
+      display: none; /* Hide the contact button on mobile */
+  }
+}

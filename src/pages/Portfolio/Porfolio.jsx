@@ -6,6 +6,8 @@ import { useInView } from 'react-intersection-observer';
 
 
 const project = require('../../assets/RER-mockup1-1024x768.png')
+const projectTwo = require('../../assets/Screenshot 2024-05-19 114903.png')
+
 
 const Porfolio = () => {
 
@@ -43,7 +45,7 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Rivers Edge Ranch</motion.div>
+                                viewport={{ once: false, amount: 0.7 }} >Course Purchasing Platform</motion.div>
                         </div>
 
                         <div className="third-wordpress">
@@ -51,9 +53,10 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >A WordPress Website for a Mushroom Farm in Bayfield, Colorado. Explore
-                                how this website showcases the beauty and bounty of a picturesque
-                                mushroom farm in Bayfield, Colorado.
+                                viewport={{ once: false, amount: 0.7 }} >The Course Purchasing Platform is a web-based 
+                                application designed to provide users with a seamless experience in browsing, selecting,
+                                 and purchasing online courses. Built with a user-friendly interface,
+                                 it ensures easy navigation and secure transactions for learners.
 
                             </motion.p>
                         </div>
@@ -63,7 +66,7 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Explore Case Study</motion.button>
+                                viewport={{ once: false, amount: 0.7 }} >Explore Website</motion.button>
                         </div>
                     </div>
                     <div className="portfolio-right">
@@ -97,7 +100,7 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Rivers Edge Ranch</motion.div>
+                                viewport={{ once: false, amount: 0.7 }} >E-Commerce Website</motion.div>
                         </div>
 
                         <div className="third-wordpress">
@@ -105,9 +108,11 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >A WordPress Website for a Mushroom Farm in Bayfield, Colorado. Explore
-                                how this website showcases the beauty and bounty of a picturesque
-                                mushroom farm in Bayfield, Colorado.
+                                viewport={{ once: false, amount: 0.7 }} >The E-Commerce Website is a dynamic 
+                                and fully functional online shopping platform designed to provide users with
+                                 a seamless shopping experience. It features a modern UI/UX, secure transactions, 
+                                 and efficient product management,
+                                 making it ideal for businesses looking to sell their products online.
 
                             </motion.p>
                         </div>
@@ -117,7 +122,7 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Explore Case Study</motion.button>
+                                viewport={{ once: false, amount: 0.7 }} >Explore Website</motion.button>
                         </div>
                     </div>
                 </div>
@@ -140,7 +145,7 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Rivers Edge Ranch</motion.div>
+                                viewport={{ once: false, amount: 0.7 }} >Flight Ticket Booking Platform</motion.div>
                         </div>
 
                         <div className="third-wordpress">
@@ -148,9 +153,10 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >A WordPress Website for a Mushroom Farm in Bayfield, Colorado. Explore
-                                how this website showcases the beauty and bounty of a picturesque
-                                mushroom farm in Bayfield, Colorado.
+                                viewport={{ once: false, amount: 0.7 }} >The Flight Ticket Booking Platform is a
+                                 user-friendly web application designed to help travelers search and book flights
+                                  seamlessly. With an intuitive interface and real-time 
+                                flight data, users can easily find the best travel options based on their preferences.
 
                             </motion.p>
                         </div>
@@ -160,11 +166,11 @@ const Porfolio = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 ref={ref}
-                                viewport={{ once: false, amount: 0.7 }} >Coming Soon</motion.button>
+                                viewport={{ once: false, amount: 0.7 }} >Explore Website</motion.button>
                         </div>
                     </div>
                     <div className="portfolio-right">
-                        <img className='project-image' src={project} alt="" />
+                        <img className='project-image' src={projectTwo} alt="" />
                     </div>
                 </div>
 

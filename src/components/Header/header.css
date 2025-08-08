@@ -8,6 +8,9 @@
   width: 100%;
   background-color: #fcf9f2;
   letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-container {
@@ -38,21 +41,48 @@
 /* Navigation Links */
 .links {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .links .links-l {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-decoration: none;
-  color: #cbcbcb;
+  color: #727272;
   letter-spacing: 1.5px;
   cursor: pointer;
-  transition: color 0.3s;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.links .links-l::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.links .links-l:hover::after {
+  width: 100%;
 }
 
 .links .links-l:hover {
-  color: #121212;
+  color: black;
+}
+
+/* Active link */
+.links .links-l.active {
+  color: black;
+  font-weight: bold;
+}
+
+.links .links-l.active::after {
+  width: 100%;
 }
 
 /* Contact Button */
@@ -60,7 +90,7 @@
   padding: 0.7rem 1.5rem;
   font-size: 14px;
   background-color: #fcf9f2;
-  border: 0.7px solid black;
+  border: 1px solid black;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -83,7 +113,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-  right: 20px; /* Moves it to the right */
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -91,26 +121,31 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      right: 0;
-      background: #fcf9f2;
-      width: 100%;
-      text-align: center;
-      padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fcf9f2;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 999;
   }
 
   .links.open {
-      display: flex;
+    display: flex;
   }
 
   .menu-icon {
-      display: block;
+    display: block;
   }
 
   .contact {
-      display: none; /* Hide the contact button on mobile */
+    display: none;
+  }
+
+  .links .links-l {
+    padding: 10px 0;
   }
 }

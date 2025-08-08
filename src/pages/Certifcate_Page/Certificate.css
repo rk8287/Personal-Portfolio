@@ -1,0 +1,215 @@
+.certificate-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #a3b18a;
+  color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.certificate-title,
+.training-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fcf9f2;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .certificate-title,
+  .training-title {
+    font-size: 28px;
+  }
+}
+
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 300px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.certificate-card:hover .card-inner,
+.training-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.card-back {
+  background-color: #fcf9f2;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-back h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #a3b18a;
+}
+
+.card-back p {
+  font-size: 14px;
+  color: #a3b585;
+}
+
+.certificate-card:hover .card-front,
+.certificate-card:hover .card-back,
+.training-card:hover .card-front,
+.training-card:hover .card-back {
+  box-shadow: 0 10px 35px rgba(163, 177, 138, 0.4); 
+}
+
+
+
+.training-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.training-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 350px;
+}
+
+.training-card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.training-card .card-front,
+.training-card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.training-card .card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.training-card .card-back {
+  background-color: #fcf9f2;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.training-card .card-back h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #a3b18a;
+}
+
+.training-card .card-back p {
+  font-size: 15px;
+  color: #9eb17d;
+}
+
+
+
+.fade-in {
+  animation: fadeInSlide 1.2s ease-in-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-title {
+    font-size: 26px;
+  }
+
+  .training-card {
+    height: 300px;
+  }
+
+  .training-card .card-back h3 {
+    font-size: 18px;
+  }
+
+  .training-card .card-back p {
+    font-size: 13px;
+  }
+}
